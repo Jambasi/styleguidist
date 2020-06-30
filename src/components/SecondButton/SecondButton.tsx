@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 
-class Button extends Component {
+class SecondButton extends Component {
   /**
    * @type {Function}
    * @returns {void}
@@ -20,9 +20,9 @@ class Button extends Component {
    * @returns {JSX.Element}
    */
   render() {
-  
+    const clickFunction = this.handleClick
     return (
-      <button onClick={this.handleClick}
+      <button onClick={clickFunction}
        
       >
         {"Documentation"}
@@ -31,4 +31,4 @@ class Button extends Component {
   }
 }
 
-export default Button;
+export default SecondButton;
